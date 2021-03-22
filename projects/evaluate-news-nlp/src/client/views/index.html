@@ -1,43 +1,78 @@
 <!DOCTYPE html>
 <html lang="en" dir="ltr">
-    <head>
-        <meta charset="utf-8">
-        <title>Test</title>
-        <link rel="stylesheet" href="/styles/resets.css">
-        <link rel="stylesheet" href="/styles/base.css">
-        <link rel="stylesheet" href="/styles/header.css">
-        <link rel="stylesheet" href="/styles/form.css">
-        <link rel="stylesheet" href="/styles/footer.css">
-    </head>
 
-    <body>
+<head>
+    <meta charset="utf-8">
+    <title>Test</title>
+    <link rel="stylesheet" href="/styles/resets.css">
+    <link rel="stylesheet" href="/styles/base.css">
+    <link rel="stylesheet" href="/styles/header.css">
+    <link rel="stylesheet" href="/styles/form.css">
+    <link rel="stylesheet" href="/styles/footer.css">
+</head>
 
-        <header>
-            <div class="">
-                Logo
-            </div>
-            <div class="">
-                navigation
-            </div>
-        </header>
+<body>
 
-        <main>
-            <section>
-                <form class="" onsubmit="return handleSubmit(event)">
-                    <input id="name" type="text" name="input" value="" onblur="onBlur()" placeholder="Name">
-                    <input type="submit" name="" value="submit" onclick="return handleSubmit(event)" onsubmit="return handleSubmit(event)">
-                </form>
-            </section>
+    <header>
+        <div class="">
+            MOHAMED NASSEF
+        </div>
+        <div class="">
+            navigation
+        </div>
+    </header>
 
-            <section>
-                <strong>Form Results:</strong>
-                <div id="results"></div>
-            </section>
-        </main>
+    <main>
+        <section>
+            <form class="" onsubmit="return handleSubmit(event)">
+                <input id="url" type="text" name="input" value="" onblur="onBlur()" placeholder="URL">
+                <input type="submit" name="" value="submit" onclick="return Client.handleSubmit(event)"
+                    onsubmit="return handleSubmit(event)">
+            </form>
+        </section>
 
-        <footer>
-            <p>This is a footer</p>
-        </footer>
+        <section>
+            <strong>Form Result:</strong>
+            <table class="paleBlueRows" style="width:100%;align-items: center;text-align:center;">
+                <thead>
 
-    </body>
+                    <tr>
+                        <th>polarity</th>
+                        <th>agreement</th>
+                        <th>subjectivity</th>
+                        <th>confidence</th>
+                        <th>irony</th>
+
+                    </tr>
+                </thead>
+                <tbody>
+
+                    <tr>
+                        <td>
+                            <div id="polarity"></div>
+                        </td>
+                        <td>
+                            <div id="agreement"></div>
+                        </td>
+                        <td>
+                            <div id="subjectivity"></div>
+                        </td>
+                        <td>
+                            <div id="confidence"></div>
+                        </td>
+                        <td>
+                            <div id="irony"></div>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+        </section>
+    </main>
+
+    <footer>
+        <p>This is a footer</p>
+    </footer>
+
+</body>
+
 </html>
